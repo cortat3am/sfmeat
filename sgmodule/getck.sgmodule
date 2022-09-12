@@ -1,0 +1,24 @@
+#!name= 签到cookie
+#!desc= 获取签到ck合集
+#!system=ios
+
+[Script]
+
+# > JD by NobyDa
+获取JD Cookie = type=http-request,requires-body=1,pattern=^https:\/\/(api\.m|me-api|ms\.jr)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?|gw\/generic\/hy\/h5\/m\/appSign\?),script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+
+# > 中国电信
+电信签到ck = type=http-request,pattern=^https:\/\/wapside.189.cn:9001\/jt-sign\/api\/home\/homeInfo,requires-body=true,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js
+
+# > 吾爱 登录 https://www.52pojie.cn/home.php 获取
+吾爱cookie = type=http-request,pattern=https:\/\/www\.52pojie\.cn\/home\.php\?mod=space,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js
+
+# > 新浪微博
+获取签到token = type=http-request,pattern=https:\/\/api\.weibo\.cn\/\d\/users\/show,script-path=https://raw.githubusercontent.com/sfmeattt/sfmeat/master/script/weibo.js
+获取用户ck    = type=http-request,pattern=https:\/\/api\.weibo\.cn\/2\/logservice\/attach,script-path=https://raw.githubusercontent.com/sfmeattt/sfmeat/master/script/weibo.js
+
+# > 小米运动
+获取Token = type=http-response,pattern=^https:\/\/account\.huami\.com\/v2\/client\/login,requires-body=1,script-path=https://raw.githubusercontent.com/sfmeattt/sfmeat/master/script/xmbs.js
+
+[MITM]
+hostname = ms.jr.jd.com, me-api.jd.com, api.m.jd.com, wapside.189.cn:9001, e.189.cn, api.weibo.cn, m.weibo.cn, account.huami.com, www.52pojie.cn
