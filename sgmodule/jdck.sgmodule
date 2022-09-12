@@ -1,4 +1,5 @@
-#!name= JD签到cookie
+#!name= JD Cookie
+#!desc= 获取JD签到ck
 #!system=ios
 
 [Script]
