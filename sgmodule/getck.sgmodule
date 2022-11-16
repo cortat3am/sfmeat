@@ -16,4 +16,4 @@
 吾爱cookie = type=http-request,pattern=https:\/\/www\.52pojie\.cn\/home\.php\?mod=space,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js
 
 [MITM]
-hostname = ms.jr.jd.com, me-api.jd.com, api.m.jd.com, wapside.189.cn:9001, e.189.cn, api.weibo.cn, m.weibo.cn, ccsp-egmas.sf-express.com, www.52pojie.cn
+hostname = ms.jr.jd.com, me-api.jd.com, api.m.jd.com, wapside.189.cn:9001, e.189.cn, ccsp-egmas.sf-express.com, www.52pojie.cn
