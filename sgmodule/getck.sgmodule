@@ -15,5 +15,14 @@
 # > 吾爱 登录 https://www.52pojie.cn/home.php 获取
 吾爱cookie = type=http-request,pattern=https:\/\/www\.52pojie\.cn\/home\.php\?mod=space,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js
 
+# > 微博通知
+微博通知Cookie = type=http-request,pattern=^https:\/\/m\.weibo\.cn\/feed\/,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Weibo/Weibo.js
+
+# > 新浪微博
+获取签到token = type=http-request,pattern=https:\/\/api\.weibo\.cn\/\d\/users\/show,script-path=https://raw.githubusercontent.com/cortat3am/sfmeat/master/scripts/weibo.js
+获取用户ck    = type=http-request,pattern=https:\/\/api\.weibo\.cn\/2\/logservice\/attach,script-path=https://raw.githubusercontent.com/cortat3am/sfmeat/master/scripts/weibo.js
+
+
+
 [MITM]
-hostname = ms.jr.jd.com, me-api.jd.com, api.m.jd.com, wapside.189.cn:9001, e.189.cn, ccsp-egmas.sf-express.com, www.52pojie.cn
+hostname = ms.jr.jd.com, me-api.jd.com, api.m.jd.com, wapside.189.cn:9001, e.189.cn, ccsp-egmas.sf-express.com, www.52pojie.cn, api.weibo.cn, m.weibo.cn
