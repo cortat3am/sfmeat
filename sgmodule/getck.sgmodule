@@ -1,5 +1,5 @@
 #!name= 签到cookie
-#!desc= 获取签到ck合集
+#!desc= 签到ck合集
 #!system= ios
 
 [Script]
@@ -21,8 +21,6 @@
 # > 新浪微博
 获取签到token = type=http-request,pattern=https:\/\/api\.weibo\.cn\/\d\/users\/show,script-path=https://raw.githubusercontent.com/cortat3am/sfmeat/master/scripts/weibo.js
 获取用户ck    = type=http-request,pattern=https:\/\/api\.weibo\.cn\/2\/logservice\/attach,script-path=https://raw.githubusercontent.com/cortat3am/sfmeat/master/scripts/weibo.js
-
-
 
 [MITM]
 hostname = ms.jr.jd.com, me-api.jd.com, api.m.jd.com, wapside.189.cn:9001, e.189.cn, ccsp-egmas.sf-express.com, www.52pojie.cn, api.weibo.cn, m.weibo.cn
