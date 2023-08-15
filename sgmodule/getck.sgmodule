@@ -15,7 +15,7 @@
 用户Cookie = type=http-request,pattern=https:\/\/api\.weibo\.cn\/2\/logservice\/attach,script-path=https://raw.githubusercontent.com/cortat3am/sfmeat/master/scripts/weibo.js
 
 # > 高德地图
-签到Cookie = type=http-response, pattern=^https:\/\/m5-zb\.amap\.com\/ws\/yuece\/act\/query\?, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, timeout=60, script-update-interval=0
+签到Cookie = type=http-response, pattern=^https:\/\/m5(-zb)?\.amap\.com\/ws\/yuece\/(act|openapi)\/(activity\/current\/)?query,requires-body=1,script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js
 
 # > 中国电信
 签到Cookie = type=http-request,pattern=^https:\/\/wapside.189.cn:9001\/jt-sign\/api\/home\/homeInfo,requires-body=true,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js
